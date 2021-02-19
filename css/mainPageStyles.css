@@ -34,6 +34,27 @@ Configure a ico to the page
     margin-top: 10%;
 }
 
+.solutionIco{
+    height: 40%;
+    width: 40%;
+}
+
+
+/*
+Configuration solutions barnner
+*/
+.mainSolutionsIcons{
+    float: right;
+}
+
+/*
+Videoplyer configuration
+*/
+.videoContainer{
+    width: 100%;
+    height: 100%;
+}
+
 /*
 Footer configuration
 */
@@ -41,5 +62,5 @@ Footer configuration
     background-color: black;
 }
 #copyright{
-    background-color: black;
+   color:white;
 }
