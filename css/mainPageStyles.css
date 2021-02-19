@@ -1,0 +1,45 @@
+/*
+FelipedelosH 2021
+
+This is used to generate a default styles of the page
+*/
+
+/*
+Nav bar configuration
+*/
+.navBar{
+    background-color: #f47b20;
+}
+.navButtons{
+    float: right;
+}
+
+/*
+Configure a ico to the page
+*/
+.ico{
+    height: 70%;
+    width: 70%;
+}
+
+.socialIco{
+    height: 60%;
+    width: 60%;
+    margin-top: 10%;
+}
+
+.carIco{
+    height: 60%;
+    width: 60%;
+    margin-top: 10%;
+}
+
+/*
+Footer configuration
+*/
+.footer{
+    background-color: black;
+}
+#copyright{
+    background-color: black;
+}
