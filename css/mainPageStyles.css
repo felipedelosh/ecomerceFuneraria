@@ -24,6 +24,7 @@ Configure a ico to the page
     height: 60%;
     width: 60%;
     margin-top: 10%;
+    cursor: pointer;
 }
 
 .carIco{
