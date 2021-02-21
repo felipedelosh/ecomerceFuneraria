@@ -25,5 +25,4 @@ $(document).ready(function(){
     //Put a currently year on the page
     var currentlyDate = new Date();
     $("#copyright").text(currentlyDate.getFullYear());
-
 });

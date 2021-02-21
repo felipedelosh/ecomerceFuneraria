@@ -10,7 +10,16 @@ Nav bar configuration
 .navBar{
     background-color: #f47b20;
 }
+/*
+Google form configuration
+*/
+.form{
+    background-color: #d87b7b;
+}
 
+.googleForm{
+   margin-top: 0px;
+}
 
 /*
 Configure a ico to the page
@@ -44,7 +53,6 @@ Configuration solutions barnner
 */
 .mainSolutionIcons{
     margin-top: 5%;
-    background-color: red;
 }
 
 
@@ -62,6 +70,8 @@ Footer configuration
 */
 .footer{
     background-color: black;
+    width: 100%;
+    height: 50px;
 }
 #copyright{
    color:white;
@@ -72,6 +82,7 @@ Footer configuration
 Seting to whatssap button
 */
 .btnWhatsapp{
+    z-index: 10000;
     display: inline-block;
     position: fixed;
     bottom: 0;
