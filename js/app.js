@@ -1,6 +1,12 @@
 //Wait to charge all html+css
 $(document).ready(function(){
 
+    //Send whatsapp to seller
+    $(".btnWhatsapp").click(function(){
+        url = "https://api.whatsapp.com/send?phone=+573104234025&text=test";
+        window.open(url, "_blank");
+    });
+
     //Goto to main page
     $('#goToMainPage').click(function(){
         location.reload();
