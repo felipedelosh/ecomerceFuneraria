@@ -71,8 +71,9 @@ Footer configuration
 Seting to whatssap button
 */
 .btnWhatsapp{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
