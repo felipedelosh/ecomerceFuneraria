@@ -27,6 +27,8 @@ $(document).ready(function(){
     //End go to Instagram   
     });
 
+    
+
 
     //Put a currently year on the page
     var currentlyDate = new Date();

@@ -61,6 +61,15 @@ Configuration solutions barnner
     margin-bottom: 3%;
 }
 
+.JPBproduct{
+    width: 80%;
+    cursor: pointer;
+}
+
+.JPBPrice{
+    color: green;
+}
+
 /*
 Videoplyer configuration
 */
@@ -105,3 +114,18 @@ Seting to whatssap button
     margin-left: 20px;
     margin-bottom: 40px;
 }
+
+/*
+Configurate a movil version
+*/
+@media (max-width: 767px) {
+
+        .ico{
+            width: 40%;
+            margin-left: 25%;
+            margin-bottom: 8%;
+        }
+
+    
+
+ }
