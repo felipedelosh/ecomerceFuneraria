@@ -1,73 +1,65 @@
 /*
-FelipedelosH 2021
-
-This is used to generate a default styles of the page
+    FelipedelosH
+    2021
+    This is used to generate a default styles of the page
 */
 
-/*
-Nav bar configuration
-*/
-.navBar{
+.mainBanner{
     background-color: #f47b20;
 }
-/*
-Google form configuration
-*/
-.form{
-    background-color:  #e7731a;
+
+.mainForm{
+    background-color: #e7731a;
 }
 
-.googleForm{
-   margin-top: 0px;
+#googleFrom{
+   display: block;
 }
-
-/*
-Configure a ico to the page
-*/
-.ico{
-    height: 70%;
-    width: 70%;
-}
-
-.socialIco{
-    height: 60%;
-    width: 60%;
-    margin-top: 10%;
-    cursor: pointer;
-}
-
-.carIco{
-    height: 60%;
-    width: 60%;
-    margin-top: 10%;
-}
-
-.solutionIco{
-    height: 40%;
-    width: 40%;
-}
-
 
 
 .pageTitleText{
-    margin-top: 4%;
+    margin-top: 8%;
+}
+
+.JPBdescription{
+    margin-bottom: 2%;
+
 }
 
 /*
-Configuration solutions barnner
+Carrousell configuration
 */
-.mainSolutionIcons{
+.slideshow{
     margin-top: 5%;
-    margin-bottom: 3%;
 }
 
-.JPBproduct{
-    width: 80%;
+#btnCarouselPrev, #btnCarouselNext{
+    display: flex;
+    align-items: center;
     cursor: pointer;
 }
 
-.JPBPrice{
-    color: green;
+#txtPrev{
+    text-align: right;
+    font-size: large;
+}
+
+#txtNext{
+    text-align: left;
+    font-size: large;
+}
+
+.btnCarousel:hover{
+    color: aqua;
+}
+
+ul, li{
+    list-style:none;
+}
+
+.productImage{
+    width: 70%;
+    height: 70%;
 }
 
 /*
@@ -80,29 +72,68 @@ Videoplyer configuration
     height: 100%;
 }
 
-.history{
-    margin-top: 5%;
-    margin-bottom: 5%;
+.oursSolutions{
+   margin-left: 3%;
 }
 
-.legend{
-    margin-bottom: 5%;
+/*
+this is for send a solution ico to rigth
+*/
+.solutionsA{
+    background-color: tomato;
+    float: right;
+}
+
+.textSolutions{
+    margin-top: 1%;
+    height: auto;
+    word-wrap: break-word;
+}
+
+
+.mainFooter{
+    background-color: black;
+    height: 100%;
+}
+
+#textYear{
+    color: white;
 }
 
 
 /*
-Footer configuration
+Icons
 */
-.footer{
-    background-color: black;
-    width: 100%;
-    height: 50px;
-}
-#copyright{
-   color:white;
+#icoMainPage{
+    margin-left: 20%;
+    height: 100%;
+    width: 50%;
+    cursor: pointer;
 }
 
+#icoFacebook{
+    margin-top: 20%;
+    cursor: pointer;
+}
 
+#icoInstagram{
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+#icoBuyCar{
+    margin-top: 8%;
+    width: 30%;
+    cursor: pointer;
+}
+
+.icoSolution{
+    width: 50%;
+}
+
+/*
+Whatsapp
+*/
 /*
 Seting to whatssap button
 */
@@ -113,19 +144,108 @@ Seting to whatssap button
     bottom: 0;
     margin-left: 20px;
     margin-bottom: 40px;
+    cursor: pointer;
 }
 
 /*
-Configurate a movil version
+configurate a movil enviroment
 */
-@media (max-width: 767px) {
+@media (max-width: 800px) {
 
-        .ico{
-            width: 40%;
-            margin-left: 25%;
-            margin-bottom: 8%;
-        }
 
+    /*
+    Reapair pos to whatsapp button
+    */
+    .btnWhatsapp{
+        margin-left: 5px;
+        margin-bottom: 10px;
+    }
+
+    .pageIcoContainer{
+        margin-left: 33%;
+        margin-top: 2%;
+        margin-bottom: 0%;
+        width: 40%;
+        height: 40%;
+    }
+
+    .navBarIcoContainer{
+        height: 70%;
+        width: 90%;
+        margin-bottom: 2%;
+    }
+
+    #icoMainPage{
+        margin-left: 0%;
+        height: 80%;
+        width: 80%;
+        cursor: pointer;
+    }
+    
+    #icoFacebook{
+        margin-top: 10%;
+    }
+    
+    #icoInstagram{
+        margin-top: 10%;
+    }
+    
+    #icoBuyCar{
+        margin-top: 1%;
+        width: 30%;
+    }
+    
+    .icoSolution{
+        width: 100%;
+        height: 100%;
+    }
+
+    .mainForm{
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
+    .containerGoogleForm{
+        display: none;
+    }
+
+    .formIMG{
+        display: none;
+    }
+
+    .formBr{
+        display: none;
+    }
+
+    .pageTitleText{
+        margin-top: 6%;
+    }
+
+    .sliderTitle{
+        margin-top: 5%;
+        font-size: medium;
+        margin-bottom: 0%;
+    }
+
+
+    .productImage{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 90%;
+        height: 90%;
+    }
+
+    #sliderDescription{
+        display: none;
+    }
+
+    .btnCarousel{
+        font-size: smaller;
+    }
+
+    #btnCarouselNext{
+        margin-right: 10%;
+    }
     
 
- }
+}

@@ -16,6 +16,10 @@
 
         <!--Bootstrap-->
         <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+        <!--Bootstrap-->
+        <script src="js/bootstrap.min.js"></script>
+        <!--Carousel de bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 
         <!--My styles css-->
         <link href="css/mainPageStyles.css" rel="stylesheet" type="text/css">
@@ -23,152 +27,160 @@
         <!--Jquery-->
         <script src="jquery/jquery-3.5.1.min.js"></script>
         <script src="js/app.js"></script>
-        </head>
-    <body> 
-
-        <!--Page Content-->
-        <div class="mainPage">
+    </head>
+    <body>
+        <div class="container-fluid mainBanner">
             <!--Whatssap Button-->
             <div class="btnWhatsapp">
-                <img src="img/ico/whatsapp.png">
+                <img src="img/ico/whatsapp.png" id="icoButtonWhatsapp">
             </div>
             <!--END Whatssap Button-->
-
-            <!--Nav banner: page ico, social networks and buy car-->
-            <div class="navBar">
-                <div class="container">
+            <!--Banner, icopage, facebook button, instagran button, buy car button-->
+            <div class="row navButtons">
+                <row class="col-2 pageIcoContainer">
+                    <img class="img-fluid" src="img/ico/JPBico.png" id="icoMainPage" alt="pageLogo">
+                </row>
+                <row class="col-4">
+                    &nbsp;
+                </row>
+                <row class="col-5 ms-auto navBarIcoContainer">
                     <div class="row">
-                        <div class="col-md-2">
-                        <!--page barner ico-->
-                            <div class="pageIco">
-                                <img src="img/ico/JPBico.png" id="goToMainPage" class="ico">
-                            </div>
-                        </div>      
-                        <div class="col-md-10">
-                            <div class="navButtons">
-                                <div class="row">
-                                    <div class="col-2 ms-auto">
-                                        <div class="social">
-                                            <img src="img/ico/facebook.png" id="goToFacebook" class="socialIco">
-                                        </div>
-                                    </div>
-                                    <div class="col-2">
-                                        <div class="social">
-                                            <img src="img/ico/instagram.png" id="goToInstagram" class="socialIco">
-                                        </div>
-                                    </div>
-                                    <div class="col-2">
-                                        <div class="social">
-                                            <img src="img/ico/buycar.png" class="carIco">
-                                        </div>     
-                                    </div>
-                                </div>
-                            </div>
-                        </div>              
+                        <div class="col-2 ms-auto socialFacebook">
+                            <img id="icoFacebook" class="img-fluid social" src="img/ico/facebook.png" alt="facebook image">
+                        </div>
+                        <div class="col-2 ms-auto socialInstagram">
+                            <img id="icoInstagram" class="img-fluid social" src="img/ico/instagram.png" alt="instagram image">
+                        </div>
+                        <div class="col-5 ms-auto buyCar">
+                            <img id="icoBuyCar" class="img-fluid" src="img/ico/buycar.png" alt="buy car image">
+                        </div>
+                    </div>
+                </row>
+            </div>
+        </div>
+        <!--Form-->
+        <div class="container-fluid mainForm">
+            <div class="row">
+                <div class="col-md-12 col-8">
+                    <div class="row position-absolute col-8 offset-4 containerGoogleForm">
+                        <iframe class="googleFrom" title="Hay que crear este formulario" src="https://docs.google.com/forms/d/e/1FAIpQLScwLJv-lnVavAd3Fc6X4Z9upinv3ud4640wY19J1lEUzVivfA/viewform?embedded=true" width="600" height="450" frameborder="0" marginheight="0" marginwidth="0">
+                            Cargando...
+                        </iframe>
+                    </div>
+                    <!--Img form Background-->
+                    <div class="row">
+                        <img src="img/barnerProduts.jpg" class="img-fluid formIMG" id="imgProdutcsAndIco">
                     </div>
                 </div>
-            <!--END Nav banner: page ico, social networks and buy car-->    
             </div>
-
-            <!--Form-->
-            <div class="form">
-                <div class="row">
-                    <iframe class="googleFrom" title="Hay que crear este formulario" src="https://docs.google.com/forms/d/e/1FAIpQLScwLJv-lnVavAd3Fc6X4Z9upinv3ud4640wY19J1lEUzVivfA/viewform?embedded=true" width="600" height="450" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-                </div>
-                <div class="row">
-                    <img src="img/barnerProduts.jpg" class="img-fluid" id="imgProdutcsAndIco">
-                </div>
-            <!--END Form-->
-            </div>
-
+            <br class="formBr"><br>
+        </div>
+        
+        <!---->
+        <div class="container mainBody">
             <!--TitleMisionVision-->
             <div class="container">
                 <div class="row">
                     <h1 class="text-center display-4 pageTitleText">Soluciones JPB global comercializadora</h1>
                 </div>
                 <div class="row">
-                    <h4 class="text-center display-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ip</h4>
+                    <h4 class="text-center display-12 JPBdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ip</h4>
                 </div>
             </div>
             <br>
-
             <!--Products-->
             <div class="container">
-               <div class="row justify-content-center">
-                    <div class="col">
-                        <dic class="card JPBproduct">
-                            <div class="col">
-                                <div class="row">
-                                    <img src="products/product01/img.jpg" class="img-thumbnail">
-                                </div>
-                                <div class="row">
-                                    <div class="row">
-                                        <p class="text-center display-6 JPBPrice">$300</p>
-                                    </div>
-                                    <div class="row">
-                                        <p class="text-left font-weight-bold">Lorem ipsum dolor</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </dic>
-                    </div>
-                    <div class="col">
-                        <dic class="card JPBproduct">
-                            <div class="col">
-                                <div class="row">
-                                    <img src="products/product06/img.jpg" class="img-thumbnail">
-                                </div>
-                                <div class="row">
-                                    <div class="row">
-                                        <p class="text-center display-6 JPBPrice">$500</p>
-                                    </div>
-                                    <div class="row">
-                                        <p class="">Lorem ipsum dolor</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </dic>
-                    </div>
-                    <div class="col">
-                        <div class="card JPBproduct">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-8">
+                        <!--Carrousel By FelipedelosH-->
                             <div class="row">
-                                <img src="products/product04/img.jpg" class="img-thumbnail">
-                            </div>
-                            <div class="row">
-                                <div class="row">
-                                    <p class="text-center display-6 JPBPrice">$100</p>
+                                <div id="btnCarouselPrev" class="col-1 left">
+                                    <p id="txtPrev" class="btnCarousel">&lt;&lt;</p>
                                 </div>
-                                <div class="row">
-                                    <p class="">Lorem ipsum dolor</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <dic class="card JPBproduct">
-                            <div class="col">
-                                <div class="row">
-                                    <img src="products/product09/img.jpg" class="img-thumbnail">
-                                </div>
-                                <div class="row">
-                                    <div class="row">
-                                        <p class="text-center display-6 JPBPrice">$900</p>
+                                <div class="col-8 mx-auto">
+                                    <!--Slider Doit-->
+                                    <!--Slider-->
+                                    <div class="slideshow">
+                                        <!--Slider items-->
+                                        <ul class="slider">
+                                            <li>
+                                                <div class="card">
+                                                    <h1 class="text-center sliderTitle">Impresora térmica para Cintas fúnebres.</h1>
+                                                    <img id="productImage" class="img-thumbnail rounded mx-auto d-block productImage" src="products/productA/img.jpg" alt="XPRINTER">
+                                                    <br>
+                                                    <p id="sliderDescription" class="text-center"> 
+                                                        - Marca XPRINTER
+                                                        - Garantia de 1 año por defecto de fabricación
+                                                        - software para creación de plantillas
+                                                        - Soporte técnico
+                                                        - Incluye 1 rollo de cinta x 50 mts y 1 rollo de tinta x 50 mts 
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="card">
+                                                    <h1 class="text-center sliderTitle">Cinta membretiada para impresora.</h1>
+                                                    <img id="productImage" class="img-thumbnail rounded mx-auto d-block productImage" src="products/productB/img.jpg" alt="Cinta membretiada para impresora">
+                                                    <br>
+                                                    <p id="sliderDescription" class="text-center"> 
+                                                        - Medida de 10 cm de ancho x 50 mts de largo
+                                                        - Cinta en polipropileno especial para impresoras térmicas.
+                                                        - Colore disponibles: Azul, verde, vino tinto, blanca, morada
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="card">
+                                                    <h1 class="text-center sliderTitle">Ribbon de tinta dorada para impresora.</h1>
+                                                    <img id="productImage" class="img-thumbnail rounded mx-auto d-block productImage" src="products/productC/img.jpg" alt="Ribbon de tinta dorada para impresora">
+                                                    <br>
+                                                    <p id="sliderDescription" class="text-center"> 
+                                                        - Medidas: 8cm de ancho x 300 mts de largo.
+                                                        - 8cm de ancho x 50 mts de largo.
+                                                        - Cinta cera resina especial adherecia para cintas membretiada.
+                                                          En stock al momento de pedido se despacha en el largo que haya disponible
+                                                          de 250 mts o de 200 mts 
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="card">
+                                                    <h1 class="text-center sliderTitle">Impresora bluetooth</h1>
+                                                    <img id="productImage" class="img-thumbnail rounded mx-auto d-block productImage" src="products/productD/img.jpg" alt="Impresora bluetooth">
+                                                    <br>
+                                                    <p id="sliderDescription" class="text-center"> 
+                                                        - impresora para imprimir recibos POS.
+                                                          Especial para personal de cobranzas.
+                                                          Conexión bluetooth a celular y por cable a pc
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="card">
+                                                    <h1 class="text-center sliderTitle">Filtros 6003, 3M para caretas full face</h1>
+                                                    <img id="productImage" class="img-thumbnail rounded mx-auto d-block productImage" src="products/productE/img.jpg" alt="Filtros 6003, 3M para caretas full face">
+                                                    <br>
+                                                    <p id="sliderDescription" class="text-center"> 
+                                                        Filtros para vapores orgánicos 
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <!--End Slider items-->
                                     </div>
-                                    <div class="row">
-                                        <p class="">Lorem ipsum dolor</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </dic>
-                    </div>
-               </div>
-               <br>
-               <div class="row">
-                   <p class="text-center">Mostrar todo...</p>
-                </div>
-            </div>
-            <!--END Products-->
+                                    <!--End Slider-->
+                                    <!--End to slider DoIt-->
 
+                                </div>
+                                <div id="btnCarouselNext" class="col-1 right">
+                                    <p id="txtNext" class="btnCarousel"> &gt;&gt;</p>
+                                </div>
+                            </div>
+                        <!--Carrousel By FelipedelosH-->
+                    </div>
+                </div>
+            <!--End Products-->
+            </div>
             <!--Video-->
             <div class="container">
                 <div class="row">
@@ -179,103 +191,143 @@
                     </div>
                 </div>
             <!--END Video-->
+            <br><br>
             </div>
-
+            <!--General Solution-->
+            <div class="container oursSolutions">
+                <div class="row justify-content-center">
+                    <div class="col-md col-3">
+                        <div class="card border-0">
+                            <img src="img/ico/movil.jpg" alt="ico movil" class="mx-auto d-block icoSolution">
+                            <p class="text-center textSolutions">movil</p>
+                        </div>
+                    </div>
+                    <div class="col-md col-3">
+                        <div class="card border-0">
+                            <img src="img/ico/pos.jpg" alt="ico pos" class="mx-auto d-block icoSolution">
+                            <p class="text-center textSolutions">POS</p>
+                        </div>
+                    </div>
+                    <div class="col-md col-3">
+                        <div class="card border-0">
+                            <img src="img/ico/etiquetas.jpg" alt="ico etiquetas" class="mx-auto d-block icoSolution">
+                            <p class="text-center textSolutions">Etiquetas</p>
+                        </div>
+                    </div>
+                    <div class="col-md col-3">
+                        <div class="card border-0">
+                            <img src="img/ico/sin-revestimiento.jpg" alt="ico sin revestimiento" class="mx-auto d-block icoSolution">
+                            <p class="text-center textSolutions">Sin revestimiento</p>
+                        </div>
+                    </div>
+                    <div class="col-md col-3">
+                        <div class="card border-0">
+                            <img src="img/ico/kioscos.jpg" alt="ico kiosco" class="mx-auto d-block icoSolution">
+                            <p class="text-center textSolutions">Kiosco</p>
+                        </div>
+                    </div>
+                    <div class="col-md col-3">
+                        <div class="card border-0">
+                            <img src="img/ico/suministros.jpg" alt="ico suministros" class="mx-auto d-block icoSolution">
+                            <p class="text-center textSolutions">Suministros</p>
+                        </div>
+                    </div>
+                    <div class="col-md col-3">
+                        <div class="card border-0">
+                            <img src="img/ico/software.jpg" alt="ico software" class="mx-auto d-block icoSolution">
+                            <p class="text-center textSolutions">Software</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row justify-content-center">
+                <h1 class="text-center">Nuestras soluciones</h1>
+            </div>
+            <br><br>
             <!--Solutions-->
-            <div class="container">
-                <div class="mainSolutionIcons">
-                    <div class="row justify-content-center">
-                        <div class="col-1">
-                            <div class="solutionMovil">
-                                <img src="img/ico/movil.jpg" class="solutionIco">
-                                <p>Movil</p>
-                            </div> 
+            <div class="row justify-content-center">
+                
+                <div class="col-5">
+                    <div class="row">
+                        <div class="col-6">
+                            <img class="img-fluid solutionsA" src="img/ico/al-por-menor.jpg" alt="ventaws al por menor">
                         </div>
-                        <div class="col-1">
-                            <div class="solutionPos">
-                                <img src="img/ico/pos.jpg" class="solutionIco">
-                                <p>POS</p>
-                            </div>
+                        <div class="col-6">
+                            <p class="textSolutions">Al por menor</p>
                         </div>
-                        <div class="col-1">
-                            <div class="solutionEtiquetas">
-                                <img src="img/ico/etiquetas.jpg" class="solutionIco">
-                                <p>Etiquetas</p>
-                            </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-6">
+                            <img class="img-fluid solutionsA" src="img/ico/cuidado.jpg" alt="Cuidado de la Salud bixolon">
                         </div>
-                        <div class="col-1">
-                            <div class="solutionSinRevestimiento">
-                                <img src="img/ico/sin-revestimiento.jpg" class="solutionIco">
-                                <p>Sin revestimiento</p>
-                            </div>
+                        <div class="col-6">
+                            <p class="textSolutions">Cuidado de la Salud</p>
                         </div>
-                        <div class="col-1">
-                            <div class="solutionKioscos">
-                                <img src="img/ico/kioscos.jpg" class="solutionIco">
-                                <p>Kioscos</p>
-                            </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-6">
+                            <img class="img-fluid solutionsA" src="img/ico/transporte.jpg" alt="transporte y Lógistica">
                         </div>
-                        <div class="col-1">
-                            <div class="solutionSuministros">
-                                <img src="img/ico/suministros.jpg" class="solutionIco">
-                                <p>Suministros</p>
-                            </div>
-                        </div>
-                        <div class="col-1">
-                            <div class="solutionSoftware">
-                                <img src="img/ico/software.jpg" class="solutionIco">
-                                <p>Software</p>
-                            </div>
+                        <div class="col-6">
+                            <p class="textSolutions">Transporte y lógistica</p>
                         </div>
                     </div>
                 </div>
-                <!---->
-                <br>
-                <div class="container">
-                    <h1 class="text-center">Nuestras soluciones</h1>
-                </div>
-                <br><br>
-                <!---->
-                <div class="row mx-auto">
-                    <div class="col-6">
-                            <ol><img src="img/ico/al-por-menor.jpg" alt="ventaws al por menor">Al por menor</ol>
-                            <ol><img src="img/ico/cuidado.jpg" alt="Cuidado de la Salud bixolon">Cuidado de la Salud</ol>
-                            <ol><img src="img/ico/transporte.jpg" alt="transporte y Lógistica">Transporte y lógistica</ol>
-                    </div>
-                    <div class="col-6">
-                     
-                            <ol><img src="img/ico/gobierno.jpg" alt="Gobierno">Gobierno</ol>
-                            <ol><img src="img/ico/hospitalidad.jpg" alt="Hospitalidad">Hospitalidad</ol>
-                            <ol><img src="img/ico/manufactura.jpg" alt="Manufactura">Manufactura</ol>
-                    </div>
-                </div>
-            <!--END Solutions-->
-            </div>
 
-            <!--History-->
-            <div class="history">
-                <img src="img/history.jpg" class="img-fluid">
-            <!--END History-->
+                <div class="col-5">
+                    <div class="row">
+                        <div class="col-6">
+                            <img class="img-fluid solutionsA" src="img/ico/gobierno.jpg" alt="Gobierno">
+                        </div>
+                        <div class="col-6">
+                            <p class="textSolutions">Gobierno</p>
+                        </div>
+                    </div>      
+                    <br>
+                    <div class="row">
+                        <div class="col-6">
+                            <img class="img-fluid solutionsA" src="img/ico/hospitalidad.jpg" alt="Hospitalidad">
+                        </div>
+                        <div class="col-6">
+                            <p class="textSolutions">Hospitalidad</p>
+                        </div>
+                    </div>   
+                    <br>
+                    <div class="row">
+                        <div class="col-6">
+                            <img class="img-fluid solutionsA" src="img/ico/manufactura.jpg" alt="Manufactura">
+                        </div>
+                        <div class="col-6">
+                            <p class="textSolutions">Manufactura</p>
+                        </div>
+                    </div>                 
+                </div>
+
             </div>
             <!--Legend-->
+            <br>
             <div class="container">
-                <div class="legend">
-                    <h1 class="text-center display-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa enim earum molestias consequuntur, porro eos quidem officia nesciunt eum. Voluptatum consequatur ullam nemo distinctio sapiente sed reiciendis iste veniam deserunt!</h1>
+                <img src="img/history.jpg" class="img-fluid" alt="JBP history">
+            </div>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="legend">
+                        <h1 class="text-center display-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa enim earum molestias consequuntur, porro eos quidem officia nesciunt eum. Voluptatum consequatur ullam nemo distinctio</h1>
+                    </div>
                 </div>
+            </div>
             <!--END Legend-->
             </div>
-
-            <!--Footer-->
-            <div class="footer">
-                <p class="text-center" id="copyright">XXXX</p>
-            <!--END Footer-->
-            </div>
-
-        <!--Bootstrap-->
-        <script src="js/bootstrap.min.js"></script>
-            
+            <br>
+        </div>
         
-        <!--END Page Content-->
+        <!--Footer-->
+        <div class="container-fluid mainFooter">
+            <p class="text-center" id="textYear">2021</p>
         </div>
     </body>
 </html>
